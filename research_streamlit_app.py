@@ -43,7 +43,9 @@ def create_research_prompt(topic: str, academic_level: str = "Graduate", researc
     """Create comprehensive research prompt"""
     
     prompt = f"""
-    You are an advanced research assistant. Generate comprehensive research content for: "{topic}"
+        You are an advanced research assistant. Generate comprehensive research content for: "{topic}"
+        And Please give more relevant information about the topic and more details about the topic.
+        I noticed that am getting fake linkedin profiles and fake documents, so please make sure to provide real and accessible URLs for documents and links.
     
     Context:
     - Academic Level: {academic_level}
